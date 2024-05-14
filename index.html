@@ -534,7 +534,7 @@
         </main>
     </section>
     <section class="p-5 sm:px-20 flex justify-around">
-        <div class="hidden sm:flex">
+        <div class="hidden lg:flex">
 
             <div id="mobileTwo" class="p-10 opacity-0 transition-all duration-700 ease-in">
 
@@ -562,7 +562,7 @@
 
             </div>
         </div>
-        <div class="hidden sm:flex flex-col items-center justify-center gap-5">
+        <div class="hidden lg:flex flex-col items-center justify-center gap-5">
             <div id="tab1" class="w-1/2 border-r-2 pr-3 cursor-pointer">
                 <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
                 <p>
@@ -588,7 +588,7 @@
 
         <!-- mobile view -->
 
-        <div class="swiper mySwiper">
+        <div class="lg:hidden swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="flex flex-col items-center py-8 gap-5">
@@ -622,7 +622,7 @@
         </div>
     </section>
     <section class="p-5 sm:px-20 flex justify-around">
-        <div class="swiper mySwiper">
+        <div class="lg:hidden swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="flex flex-col items-center py-8 gap-5">
@@ -654,7 +654,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <div class="hidden sm:flex flex-col items-center justify-center gap-5">
+        <div class="hidden lg:flex flex-col items-center justify-center gap-5">
             <div id="tabOne" class="w-1/2 border-r-2 pr-3 cursor-pointer">
                 <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
                 <p>
@@ -674,7 +674,7 @@
                 </p>
             </div>
         </div>
-        <div class="hidden sm:flex relative">
+        <div class="hidden lg:flex relative">
             <div id="mobile4" class="p-10 opacity-100 transition-all duration-700 ease-in">
 
 
@@ -701,7 +701,10 @@
             </div>
         </div>
     </section>
-    <section class="p-5 sm:px-56 flex flex-col justify-around gap-20">
+
+
+
+    <section class="hidden p-5 sm:px-56 lg:flex flex-col justify-around gap-20">
         <div class="w-full sm:flex items-center justify-center">
             <span class="p-5 border-b-4 text-center cursor-pointer w-full">خروجی اکسل</span>
             <span class="p-5 border-b-4 text-center cursor-pointer w-full border-b-blue-500">مدیریت کارکنان</span>
@@ -720,11 +723,53 @@
         </div>
 
     </section>
+
+
+    <!-- mobile view -->
+
+    <section class="p-5 flex justify-around">
+        <div class="lg:hidden swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/desktop-1.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/desktop-3.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره دوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/desktop-4.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره سوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+
     <section class="flex w-full sm:px-36 items-center justify-center gap-5 h-full">
         <div class="h-full flex items-start justify-start">
             <img src="/img/image 60.svg" alt="" class="hidden sm:block">
         </div>
-        <div class="w-2/3">
+        <div class="lg:w-2/3">
             <div>
                 <div class="flex items-center mb-5 justify-center">
 
