@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iransans-fontface@0.1.1/css/iransans/iransans-fontface.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         @font-face {
             font-family: Iransans;
@@ -13,6 +14,27 @@
 
         body {
             font-family: Iransans, sans-serif;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
     <title>Document</title>
@@ -560,9 +582,78 @@
                 </p>
             </div>
         </div>
+
+
+
+
+        <!-- mobile view -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-1.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-2.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره دوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-3.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره سوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <section class="p-5 sm:px-20 flex justify-around">
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-4.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-5.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره دوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center py-8 gap-5">
+                        <img src="./img/mobile-6.webp" alt="" width="432">
+                        <h4 class="font-semibold pb-2">متن تستی شماره سوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="hidden sm:flex flex-col items-center justify-center gap-5">
             <div id="tabOne" class="w-1/2 border-r-2 pr-3 cursor-pointer">
                 <h4 class="font-semibold pb-2">متن تستی شماره اول</h4>
@@ -805,6 +896,16 @@
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
