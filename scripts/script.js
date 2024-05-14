@@ -17,6 +17,18 @@ const mobile5 = $.querySelector('#mobile5')
 const mobile6 = $.querySelector('#mobile6')
 
 
+// last slider desktop view
+const bigTab1 = $.querySelector('#bigTab1')
+const bigTab2 = $.querySelector('#bigTab2')
+const bigTab3 = $.querySelector('#bigTab3')
+
+const info1 = $.querySelector('#info1')
+const info2 = $.querySelector('#info2')
+const info3 = $.querySelector('#info3')
+
+
+
+
 tab1.addEventListener('click', () => {
     if (mobile1.classList.contains('opacity-0')) {
         mobile1.classList.remove('opacity-0')
@@ -112,5 +124,51 @@ tabThree.addEventListener('click', () => {
         tabThree.classList.add('border-r-blue-600')
         tabTwo.classList.remove('border-r-blue-600')
         tabOne.classList.remove('border-r-blue-600')
+    }
+})
+
+bigTab1.addEventListener('click', () => {
+    if (info1.classList.contains('opacity-0')) {
+        info1.classList.remove('opacity-0')
+        info1.classList.add('opacity-100')
+        info2.classList.remove('opacity-100')
+        info2.classList.add('opacity-0')
+        info3.classList.remove('opacity-100')
+        info3.classList.add('opacity-0')
+        bigTab1.classList.add('border-b-4')
+        bigTab1.classList.add('border-b-blue-600')
+        bigTab2.classList.remove('border-b-blue-600')
+        bigTab3.classList.remove('border-b-blue-600')
+        console.log('object');
+    }
+})
+
+bigTab2.addEventListener('click', () => {
+    if (info2.classList.contains('opacity-0')) {
+        info2.classList.remove('opacity-0')
+        info2.classList.add('opacity-100')
+        info1.classList.remove('opacity-100')
+        info1.classList.add('opacity-0')
+        info3.classList.remove('opacity-100')
+        info3.classList.add('opacity-0')
+        bigTab2.classList.add('border-b-4')
+        bigTab2.classList.add('border-b-blue-600')
+        bigTab1.classList.remove('border-b-blue-600')
+        bigTab3.classList.remove('border-b-blue-600')
+    }
+})
+
+bigTab3.addEventListener('click', () => {
+    if (info3.classList.contains('opacity-0')) {
+        info3.classList.remove('opacity-0')
+        info3.classList.add('opacity-100')
+        info2.classList.remove('opacity-100')
+        info2.classList.add('opacity-0')
+        info1.classList.remove('opacity-100')
+        info1.classList.add('opacity-0')
+        bigTab3.classList.add('border-b-4')
+        bigTab3.classList.add('border-b-blue-600')
+        bigTab2.classList.remove('border-b-blue-600')
+        bigTab1.classList.remove('border-b-blue-600')
     }
 })
