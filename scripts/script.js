@@ -127,48 +127,73 @@ tabThree.addEventListener('click', () => {
     }
 })
 
-bigTab1.addEventListener('click', () => {
-    if (info1.classList.contains('opacity-0')) {
-        info1.classList.remove('opacity-0')
-        info1.classList.add('opacity-100')
-        info2.classList.remove('opacity-100')
-        info2.classList.add('opacity-0')
-        info3.classList.remove('opacity-100')
-        info3.classList.add('opacity-0')
-        bigTab1.classList.add('border-b-4')
-        bigTab1.classList.add('border-b-blue-600')
-        bigTab2.classList.remove('border-b-blue-600')
-        bigTab3.classList.remove('border-b-blue-600')
-        console.log('object');
-    }
-})
+// bigTab1.addEventListener('click', () => {
+//     if (info1.classList.contains('opacity-0')) {
+//         info1.classList.remove('opacity-0')
+//         info1.classList.add('opacity-100')
+//         info2.classList.remove('opacity-100')
+//         info2.classList.add('opacity-0')
+//         info3.classList.remove('opacity-100')
+//         info3.classList.add('opacity-0')
+//         bigTab1.classList.add('border-b-4')
+//         bigTab1.classList.add('border-b-blue-600')
+//         bigTab2.classList.remove('border-b-blue-600')
+//         bigTab3.classList.remove('border-b-blue-600')
+//         console.log('object');
+//     }
+// })
 
-bigTab2.addEventListener('click', () => {
-    if (info2.classList.contains('opacity-0')) {
-        info2.classList.remove('opacity-0')
-        info2.classList.add('opacity-100')
-        info1.classList.remove('opacity-100')
-        info1.classList.add('opacity-0')
-        info3.classList.remove('opacity-100')
-        info3.classList.add('opacity-0')
-        bigTab2.classList.add('border-b-4')
-        bigTab2.classList.add('border-b-blue-600')
-        bigTab1.classList.remove('border-b-blue-600')
-        bigTab3.classList.remove('border-b-blue-600')
-    }
-})
+// bigTab2.addEventListener('click', () => {
+//     if (info2.classList.contains('opacity-0')) {
+//         info2.classList.remove('opacity-0')
+//         info2.classList.add('opacity-100')
+//         info1.classList.remove('opacity-100')
+//         info1.classList.add('opacity-0')
+//         info3.classList.remove('opacity-100')
+//         info3.classList.add('opacity-0')
+//         bigTab2.classList.add('border-b-4')
+//         bigTab2.classList.add('border-b-blue-600')
+//         bigTab1.classList.remove('border-b-blue-600')
+//         bigTab3.classList.remove('border-b-blue-600')
+//     }
+// })
 
-bigTab3.addEventListener('click', () => {
-    if (info3.classList.contains('opacity-0')) {
-        info3.classList.remove('opacity-0')
-        info3.classList.add('opacity-100')
-        info2.classList.remove('opacity-100')
-        info2.classList.add('opacity-0')
-        info1.classList.remove('opacity-100')
-        info1.classList.add('opacity-0')
-        bigTab3.classList.add('border-b-4')
-        bigTab3.classList.add('border-b-blue-600')
-        bigTab2.classList.remove('border-b-blue-600')
-        bigTab1.classList.remove('border-b-blue-600')
-    }
-})
+// bigTab3.addEventListener('click', () => {
+//     if (info3.classList.contains('opacity-0')) {
+//         info3.classList.remove('opacity-0')
+//         info3.classList.add('opacity-100')
+//         info2.classList.remove('opacity-100')
+//         info2.classList.add('opacity-0')
+//         info1.classList.remove('opacity-100')
+//         info1.classList.add('opacity-0')
+//         bigTab3.classList.add('border-b-4')
+//         bigTab3.classList.add('border-b-blue-600')
+//         bigTab2.classList.remove('border-b-blue-600')
+//         bigTab1.classList.remove('border-b-blue-600')
+//     }
+// })
+// console.log("object");
+
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('#befor');
+    const options = {
+        root: null, // صفحه اصلی
+        rootMargin: '0px',
+        threshold: 0.5 // حداقل 50% از تصویر باید در دید باشد
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // const animationClass = entry.target.getAttribute('data-animation');
+                entry.target.classList.add("after");
+                // به منظور جلوگیری از اجرای مجدد انیمیشن پس از خارج شدن و وارد شدن مجدد به دید
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    images.forEach(image => {
+        observer.observe(image);
+    });
+});

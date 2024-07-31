@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Iransans;
+    src: url(./../fonts/iransans/IRANSansX-Regular.woff);
+}
+
+body {
+    font-family: Iransans, sans-serif;
+}
+/* *{
+    position: relative;
+} */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+#befor{
+    opacity: 0;
+}
+.eleman1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+.eleman2{
+    opacity: 0;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+}
+.after{
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+    from {top:40px; opacity: 0;}
+    to { top:0px;opacity: 1;}
+  }
