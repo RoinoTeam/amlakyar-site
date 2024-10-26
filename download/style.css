@@ -3,7 +3,7 @@
 }
 
 .box-down{
-    height: 35rem;
+    height: 30rem;
     box-shadow: 0 0 0.3rem 0 rgb(196, 195, 195);
 }
 
@@ -35,5 +35,17 @@
 @media screen and (max-width: 768px){
     .box-down{
         height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .learn-button-page-down {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .learn-button-page-down {
+        display: block;
     }
 }
