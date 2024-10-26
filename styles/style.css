@@ -115,18 +115,53 @@ body {
 }
 /* End Navbar */
 
+
+
+
 /* Start Header Site */
 .section-top {
     height: 40rem;
+    /* border: 1px solid blue; */
 }
 
-.section-top-txt {
-    padding-top: 15rem;
+.mainoo{
+    /* border: 1px solid red; */
+    position: absolute;
+    /* background-color: red; */
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#neon-pic{
+    height: 40rem;
 }
 
 .section-top-txt h1 {
     font-weight: bold;
     font-size: 2.8rem;
+}
+
+.section-top-txt{
+    /* border: 1px solid red; */
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 8rem;
+    width: 50%;
+}
+
+.section-top-pic{
+    /* border: 1px solid red; */
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
 }
 
 .section-top-txt p {
@@ -138,7 +173,7 @@ body {
 }
 
 .head {
-    background: url(../img/neon.png);
+    background: url(../img/tile.svg);
     background-position: center;
     background-repeat: no-repeat;
     height: 40rem;
@@ -151,13 +186,7 @@ body {
     background-color: #fff;
 }
 
-@media screen and (max-width: 575px) {
-    .learn-button-hide {
-        display: block;
-        width: 100%;
-        margin-top: 2vh;
-    }
-}
+
 
 @media screen and (max-width: 1225px) {
     .img-head {
@@ -176,12 +205,17 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-    .head {
-        height: 34rem;
-    }
-
     .section-top {
-        height: 34rem;
+        height: 35rem;
+    }
+    
+    .mainoo{
+        height: 35rem;
+        flex-direction: row;
+    }
+    
+    #neon-pic{
+        height: 35rem;
     }
 
     .img-head {
@@ -194,24 +228,25 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-    .head {
+    .section-top {
         height: 30rem;
     }
-
-    .section-top {
+    
+    .mainoo{
+        height: 30rem;
+        flex-direction: row;
+    }
+    
+    #neon-pic{
         height: 30rem;
     }
 
     .section-top-txt {
-        padding-top: 10rem;
+        padding-top: 15rem;
     }
 }
 
 @media screen and (max-width: 822px) {
-    .section-top-txt {
-        padding-top: 10rem;
-    }
-
     .img-head {
         height: 19rem;
     }
@@ -219,15 +254,63 @@ body {
 
 @media screen and (max-width: 768px) {
     .head {
-        height: auto;
+        height: 42rem;
     }
 
     .section-top {
+        height: 42rem;
+    }
+
+    .mainoo{
+        border: 1px solid red;
+        position: absolute;
+        /* background-color: red; */
+        height: 42rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .section-top-txt{
+        border: 1px solid red;
+        height: auto;
+        width: 100%;
+    }
+    
+    .section-top-pic{
+        border: 1px solid red;
+        height: auto;
+        width: 100%;
+    }
+
+    #neon-pic{
         height: auto;
     }
 
     .section-top-txt {
         padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .learn-button-hide {
+        display: block;
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .head {
+        height: 50rem;
+    }
+
+    .section-top {
+        height: 50rem;
+    }
+
+    .mainoo{
+        height: 50rem;
     }
 }
 /* End Header Site */
