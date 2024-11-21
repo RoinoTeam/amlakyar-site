@@ -262,7 +262,7 @@ body {
     }
 
     .mainoo{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         position: absolute;
         /* background-color: red; */
         height: 42rem;
@@ -274,13 +274,13 @@ body {
     }
     
     .section-top-txt{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: auto;
         width: 100%;
     }
     
     .section-top-pic{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: auto;
         width: 100%;
     }
