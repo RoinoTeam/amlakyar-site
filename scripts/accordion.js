@@ -3,10 +3,10 @@ let toggleFlag = false
 
 function clickBtn(){
     if(toggleFlag){
-        toggleImg.setAttribute('src','img/min.png')
+        toggleImg.setAttribute('src','img/min.svg')
         toggleFlag = false
     }else{
-        toggleImg.setAttribute('src','img/big.png')
+        toggleImg.setAttribute('src','img/big.svg')
         toggleFlag = true
     }
 }
@@ -16,10 +16,10 @@ let toggleFlag2 = false
 
 function clickBtn2(){
     if(toggleFlag2){
-        toggleImg2.setAttribute('src','img/big.png')
+        toggleImg2.setAttribute('src','img/big.svg')
         toggleFlag2 = false
     }else{
-        toggleImg2.setAttribute('src','img/min.png')
+        toggleImg2.setAttribute('src','img/min.svg')
         toggleFlag2 = true
     }
 }
@@ -29,10 +29,10 @@ let toggleFlag3 = false
 
 function clickBtn3(){
     if(toggleFlag3){
-        toggleImg3.setAttribute('src','img/big.png')
+        toggleImg3.setAttribute('src','img/big.svg')
         toggleFlag3 = false
     }else{
-        toggleImg3.setAttribute('src','img/min.png')
+        toggleImg3.setAttribute('src','img/min.svg')
         toggleFlag3 = true
     }
 }
@@ -42,10 +42,10 @@ let toggleFlag4 = false
 
 function clickBtn4(){
     if(toggleFlag4){
-        toggleImg4.setAttribute('src','img/big.png')
+        toggleImg4.setAttribute('src','img/big.svg')
         toggleFlag4 = false
     }else{
-        toggleImg4.setAttribute('src','img/min.png')
+        toggleImg4.setAttribute('src','img/min.svg')
         toggleFlag4 = true
     }
 }
@@ -55,10 +55,10 @@ let toggleFlag5 = false
 
 function clickBtn5(){
     if(toggleFlag5){
-        toggleImg5.setAttribute('src','img/big.png')
+        toggleImg5.setAttribute('src','img/big.svg')
         toggleFlag5 = false
     }else{
-        toggleImg5.setAttribute('src','img/min.png')
+        toggleImg5.setAttribute('src','img/min.svg')
         toggleFlag5 = true
     }
 }
@@ -68,10 +68,10 @@ let toggleFlag6 = false
 
 function clickBtn6(){
     if(toggleFlag6){
-        toggleImg6.setAttribute('src','img/big.png')
+        toggleImg6.setAttribute('src','img/big.svg')
         toggleFlag6 = false
     }else{
-        toggleImg6.setAttribute('src','img/min.png')
+        toggleImg6.setAttribute('src','img/min.svg')
         toggleFlag6 = true
     }
 }
