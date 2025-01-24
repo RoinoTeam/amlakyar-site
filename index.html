@@ -1,126 +1,95 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap file -->
-    <link rel="stylesheet" href="styles/Bootstrap/bootstrap.rtl.min.css" />
-    <!-- Css File -->
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>املاک یار | Amlakyar</title>
-  </head>
-  <body>
-    <!--Start Navbar-->
-    <div class="container-fluid head">
-      <nav
-        class="navbar navbar-expand-lg fixed-top w-full pt-3 pb-3 pe-3 ps-3 pe-md-5 ps-md-5"
-        id="mainNav"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="#"
-            ><img src="img/logo.svg" class="logo-header"
-          /></a>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                <img src="img/logo.svg" />
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-start flex-grow-1 ps-4">
-                <li class="nav-item">
-                  <a
-                    class="nav-link mx-lg-2 active"
-                    aria-current="page"
-                    href="#"
-                    >خانه</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#option">ویژگی ها</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#question">سوالات متداول</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">وبلاگ ها</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#support">پشتیبانی</a>
-                </li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="styles/Bootstrap/bootstrap.rtl.min.css" />
+  <!-- Css File -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>املاک یار، دستیار هوشمند املاک</title>
+</head>
+
+<body>
+  <!--Start Navbar-->
+  <div class="container-fluid head">
+    <nav class="navbar navbar-expand-lg fixed-top w-full pt-3 pb-3 pe-3 ps-3 pe-md-5 ps-md-5" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#"><img src="img/logo.svg" class="logo-header" /></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="img/logo.svg" />
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <a
-            ><button class="learn-button px-4 py-2 rounded">
-              <img src="img/play-circle.svg" class="me-2" />آموزش اپلیکیشن
-            </button></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 ps-4">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">خانه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#option">ویژگی ها</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#question">سوالات متداول</a>
+              </li>
+              <!-- curently we have no blog-->
+              <!-- <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">وبلاگ ها</a>
+                </li> -->
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#support">پشتیبانی</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-      <!--End Navbar-->
+        <a><button class="learn-button px-4 py-2 rounded">
+            <img src="img/play-circle.svg" class="me-2" />آموزش اپلیکیشن
+          </button></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!--End Navbar-->
 
 
-      <!-- Start Header Site -->
-      <div class="section-top row w-full">
-        <img src="img/neon.png" id="neon-pic">
-        <div class="mainoo">
-          <div class="section-top-txt px-2 px-md-5">
-            <h1 class="pb-3">
-              املاک یار، اپلیکیشن <br />
-              مدیریت املاک و فایلینگ
-            </h1>
-            <p class="pb-2">
-              روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه ویژگی
-              های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و افزایش سود
-              شما کمک می کند.
-            </p>
-            <div class="btns-download col-12">
-              <!-- <a
+    <!-- Start Header Site -->
+    <div class="section-top row w-full">
+      <!-- <img src="img/neon.png" id="neon-pic"> -->
+      <div class="mainoo">
+        <div class="section-top-txt px-2 px-md-5">
+          <h1 class="pb-3">
+            املاک یار، اپلیکیشن <br />
+            مدیریت املاک و فایلینگ
+          </h1>
+          <p class="pb-2">
+            املاک‌یار، دستیار هوشمند و جامع مشاوران املاک، تمامی نیازهای شما در مدیریت و کاوش فایل‌های ملکی را برآورده
+            می‌کند. با امکانات پیشرفته و رابط کاربری ساده، تجربه‌ای حرفه‌ای‌تر و سریع‌تر را تجربه کنید.
+          <div class="btns-download col-12">
+            <!-- <a
                 ><button class="download-qrcode px-2 py-2 rounded border">
                   <img src="img/qrcode.png" /></button
               ></a> -->
-              <a href="download/download.html"
-                ><button class="download-fast px-4 py-2 rounded">
-                  <img src="img/download.svg" class="me-2" />دانلود اپلیکیشن
-                </button></a
-              >
-              <a
-                ><button class="learn-button-hide px-4 py-2 rounded border">
-                  <img src="img/play-circle2.svg" class="me-2" />آموزش اپلیکیشن
-                </button></a
-              >
-            </div>
-          </div>
-          <div
-            class="section-top-pic p-0 d-flex justify-content-end align-items-end pt-4 pt-md-0"
-          >
-            <img src="img/Group.png" class="img-head" />
+            <a href="download/download.html">
+              <button class="download-fast px-4 py-2 rounded">
+                <img src="img/download.svg" class="me-2" />دانلود اپلیکیشن
+              </button>
+            </a>
+            <a><button class="learn-button-hide px-4 py-2 rounded border">
+                <img src="img/play-circle-black.svg" class="me-2" />آموزش اپلیکیشن
+              </button></a>
           </div>
         </div>
-        
+        <div class="section-top-pic p-0 d-flex justify-content-end align-items-end pt-4 pt-md-0">
+          <img src="img/hero.png" class="img-head" />
+        </div>
       </div>
+
+      </img>
     </div>
     <!-- End Header Site -->
 
@@ -131,44 +100,32 @@
         <h2 class="respone-span pb-2">املاک یار برای هر املاکی!</h2>
         <div class="section-txt-whay pb-3">
           <p>
-            روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه ویژگی
-            های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و افزایش سود
-            شما کمک می کند.
+            املاک شما در هر کجا و در هر لحظه در دست شماست.
           </p>
         </div>
       </div>
 
       <div
-        class="boxs-section w-full px-4 d-flex justify-content-evenly align-items-center flex-column flex-md-row text-center"
-      >
-        <div
-          class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3"
-        >
+        class="boxs-section w-full px-4 d-flex justify-content-evenly align-items-center flex-column flex-md-row text-center">
+        <div class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3">
           <img src="img/1.svg" class="pb-3" />
-          <h5 class="box-title">اشتراک گذاری</h5>
+          <h5 class="box-title">مدیریت آسان فایل‌ها</h5>
           <p class="box-txt">
-            می توانید با املاک یار هر فایل را تبدیل به یک پست حرفه ای
-            اینستاگرامی کنید و به اشتراک بگذارید
+            با قابلیت دسته‌بندی و آرشیو فایل‌ها، همه چیز را در یک مکان مدیریت کنید.
           </p>
         </div>
-        <div
-          class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3"
-        >
+        <div class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3">
           <img src="img/2.svg" class="pb-3" />
-          <h5 class="box-title">مدیریت کارکنان</h5>
+          <h5 class="box-title">افزایش فرصت‌های معاملاتی</h5>
           <p class="box-txt">
-            با ویژگی بنگاه من میتوانید کارکنان بنگاهتان را به برنامه اضافه کنید
-            و به فعالیت آنها نظارت کنید
+            با دسترسی به فایل‌های عمومی و اشتراک‌گذاری سریع، فرصت‌های خود را افزایش دهید.
           </p>
         </div>
-        <div
-          class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3"
-        >
+        <div class="box-option d-flex align-items-center justify-content-center flex-column col-12 col-md-3">
           <img src="img/3.svg" class="pb-3" />
-          <h5 class="box-title">ساده و سریع</h5>
+          <h5 class="box-title">ابزارهای کاربردی برای حرفه‌ای‌تر شدن</h5>
           <p class="box-txt">
-            به سادگی و بدون آموزش خاصی می توانید از املاک یار در موبایل و
-            کامپیوتر خود استفاده کنید
+            ابزارهای محاسباتی دقیق، کار شما را ساده‌تر و مؤثرتر می‌کنند.
           </p>
         </div>
       </div>
@@ -180,121 +137,87 @@
       <div class="options-section-title text-center px-1 px-md-5 pb-3">
         <h6 class="top-span pb-1">ویژگی ها</h6>
         <h2 class="respone-span pb-2">
-          املاک شما در هر کجا و در هر لحظه در دستانتان
+          امکانات بی‌نظیر املاک‌یار
         </h2>
         <div class="section-txt-row pb-4">
           <p>
-            روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه ویژگی
-            های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و افزایش سود
-            شما کمک می کند.
+            با ابزارها و قابلیت‌های متنوع، تمامی نیازهای مدیریت و کاوش فایل‌های ملکی شما را پوشش می‌دهیم.
           </p>
         </div>
       </div>
 
-      <div
-        class="option-row-section w-full text-center d-flex justify-content-center align-items-center flex-column"
-      >
+      <div class="option-row-section w-full text-center d-flex justify-content-center align-items-center flex-column">
         <div class="option1 row w-full">
           <div
-            class="option1-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5"
-          >
-            <div
-              class="icon-option rounded d-flex justify-content-center align-items-center mb-4"
-            >
+            class="option1-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5">
+            <div class="icon-option rounded d-flex justify-content-center align-items-center mb-4">
               <img src="img/zap.svg" />
             </div>
-            <h4 class="title-row-section">فایل ها و متقاضی ها</h4>
+            <h4 class="title-row-section">مدیریت فایل‌ها</h4>
             <p class="pb-3">
-              روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه
-              ویژگی های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و
-              افزایش سود شما کمک می کند.
+              تمامی جزئیات فایل‌های ملکی را ثبت و دسته‌بندی کنید تا به راحتی به آنها دسترسی داشته باشید.
             </p>
-            <ul
-              class="lists-option p-0 d-flex justify-content-center align-items-start flex-column"
-            >
+            <ul class="lists-option p-0 d-flex justify-content-center align-items-start flex-column">
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                سرچ حرفه ای و فیلترینگ پیشرفته
+                ثبت اطلاعات کامل ملک شامل آدرس، قیمت و مشخصات مالک
               </li>
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                اضافه کردن عکس به فایل ها
+                آپلود و مدیریت تصاویر هر فایل
               </li>
               <li class="d-flex justify-content-center align-items-center">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                امکان انتشار عمومی
+                دسته‌بندی فایل‌ها بر اساس نوع و وضعیت ملک
               </li>
             </ul>
           </div>
 
-          <div
-            class="option1-img col-12 col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <img src="img/phone1.png" class="phone-main" />
-            <img src="img/phone3.png" class="phone-small pt-3" />
+          <div class="option1-img col-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <img src="img/feature-picture-desktop.png" class="phone-main" />
+            <img src="img/feature-picture-mobile.png" class="phone-small pt-3" />
           </div>
         </div>
 
         <div class="option2 row w-full pt-5">
-          <div
-            class="option2-img col-12 col-lg-6 d-flex justify-content-center align-items-center"
-          >
-            <img src="img/phone2.png" class="phone-main" />
-            <img src="img/phone3.png" class="phone-small pt-3" />
+          <div class="option2-img col-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <img src="img/feature2-picture-desktop.png" class="phone-main" />
+            <img src="img/feature2-picture-mobile.png" class="phone-small pt-3" />
           </div>
 
           <div
-            class="option2-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5"
-          >
-            <div
-              class="icon-option rounded d-flex justify-content-center align-items-center mb-4"
-            >
+            class="option2-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5">
+            <div class="icon-option rounded d-flex justify-content-center align-items-center mb-4">
               <img src="img/mail.svg" />
             </div>
-            <h4 class="title-row-section">فایل ها و متقاضی ها</h4>
+            <h4 class="title-row-section">اشتراک‌گذاری و کاوش فایل‌ها</h4>
             <p class="pb-3">
-              روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه
-              ویژگی های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و
-              افزایش سود شما کمک می کند.
+              امکان اشتراک‌گذاری سریع فایل‌ها و دسترسی به فایل‌های عمومی برای افزایش فرصت‌ها.
             </p>
-            <ul
-              class="lists-option p-0 d-flex justify-content-center align-items-start flex-column"
-            >
+            <ul class="lists-option p-0 d-flex justify-content-center align-items-start flex-column">
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                سرچ حرفه ای و فیلترینگ پیشرفته
+                تولید خودکار پست‌های قابل اشتراک در اینستاگرام و تلگرام
               </li>
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                اضافه کردن عکس به فایل ها
+                مشاهده فایل‌های عمومی مشاوران دیگر
               </li>
               <li class="d-flex justify-content-center align-items-center">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                امکان انتشار عمومی
+                بهبود شبکه ارتباطی و افزایش مشتریان
               </li>
             </ul>
           </div>
@@ -302,53 +225,40 @@
 
         <div class="option3 row w-full pt-5">
           <div
-            class="option3-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5"
-          >
-            <div
-              class="icon-option rounded d-flex justify-content-center align-items-center mb-4"
-            >
+            class="option3-txt col-12 col-lg-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5">
+            <div class="icon-option rounded d-flex justify-content-center align-items-center mb-4">
               <img src="img/zap.svg" />
             </div>
-            <h4 class="title-row-section">فایل ها و متقاضی ها</h4>
+            <h4 class="title-row-section">ابزارهای کاربردی</h4>
             <p class="pb-3">
-              روینو یک ابزار قدرتمند برای مدیریت کسب و کار شماست که با ارائه
-              ویژگی های بی نظیر و امکانات منحصر به فرد، به بهبود بهره وری و
-              افزایش سود شما کمک می کند.
+              با ابزارهای حرفه‌ای و دقیق، مدیریت املاک را بهینه‌تر کنید.
             </p>
-            <ul
-              class="lists-option p-0 d-flex justify-content-center align-items-start flex-column"
-            >
+            <ul class="lists-option p-0 d-flex justify-content-center align-items-start flex-column">
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                سرچ حرفه ای و فیلترینگ پیشرفته
+                محاسبه کمیسیون معاملات فروش و اجاره
               </li>
               <li class="d-flex justify-content-center align-items-center mb-2">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                اضافه کردن عکس به فایل ها
+                تبدیل رهن و اجاره به صورت دقیق
               </li>
               <li class="d-flex justify-content-center align-items-center">
-                <div
-                  class="rounded-circle d-flex justify-content-center align-items-center me-2"
-                >
+                <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                   <img src="img/check.svg" />
                 </div>
-                امکان انتشار عمومی
+                تقویم داخلی جهت مدیریت بازدیدها و نشست‌ها
               </li>
             </ul>
           </div>
 
-          <div
-            class="option3-img col-12 col-lg-6 d-flex justify-content-end align-items-center p-0"
-          >
-            <img src="img/frame.png" class="phone-main-tablet" />
+          <div class="option2-img col-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <!-- <img src="img/feature3-picture-desktop.png" class="phone-main-tablet" /> -->
+            <img src="img/feature3-picture-desktop.png" class="phone-main" />
+            <img src="img/feature3-picture-mobile.png" class="phone-small pt-3" />
           </div>
         </div>
       </div>
@@ -360,152 +270,108 @@
       <div class="question-section-title text-center pt-3 px-1 px-md-5">
         <h2 class="respone-span pb-2 pt-5">سوالات متداول</h2>
         <div class="section-txt-row pb-4">
-          <p>هر آنچه باید درمورد محصول و هزینه آن بدانید.</p>
+          <p>هر آنچه باید درمورد املاک‌یار بدانید.</p>
         </div>
       </div>
 
-      <div
-        class="accordion-section w-full py-5 d-flex justify-content-center align-items-center"
-      >
+      <div class="accordion-section w-full py-5 d-flex justify-content-center align-items-center">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseOne"
-                data-bs-toggle="collapse"
-                onclick="clickBtn()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseOne"
+                data-bs-toggle="collapse" onclick="clickBtn()">
                 <img src="img/min.svg" id="toggleImg" />
-                <span>آیا نسخه آزمایشی رایگان در دسترس است؟</span>
+                <span>املاک‌یار چیست و چه کاربردی دارد؟</span>
               </button>
             </div>
-            <div
-              class="collapse show"
-              id="panelsStayOpen-collapseOne"
-              data-bs-parent="#mainAccordion"
-            >
+            <div class="collapse show" id="panelsStayOpen-collapseOne" data-bs-parent="#mainAccordion">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  املاک‌یار یک دستیار هوشمند برای مشاوران املاک است که به مدیریت و کاوش فایل‌های ملکی کمک می‌کند.
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseTwo"
-                data-bs-toggle="collapse"
-                onclick="clickBtn2()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseTwo"
+                data-bs-toggle="collapse" onclick="clickBtn2()">
                 <img src="img/big.svg" id="toggleImg2" />
-                <span>آیا می توانم بعدا پلن خود را تغییر دهم؟</span>
+                <span>چگونه می‌توانم املاک‌یار را دانلود و نصب کنم؟</span>
               </button>
             </div>
             <div class="collapse" id="panelsStayOpen-collapseTwo">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  املاک‌یار را می‌توانید از فروشگاه‌های اپلیکیشن مانند کافه‌بازار و مایکت دانلود و نصب کنید. و یا در
+                  پایین این صفحه دکمه "دانلود اپلیکیشن" را بزنید.
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseThree"
-                data-bs-toggle="collapse"
-                onclick="clickBtn3()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseThree"
+                data-bs-toggle="collapse" onclick="clickBtn3()">
                 <img src="img/big.svg" id="toggleImg3" />
-                <span>سیاست لغو اشتراک شما چیست؟</span>
+                <span>چگونه می‌توانم پشتیبانی دریافت کنم؟</span>
               </button>
             </div>
             <div class="collapse" id="panelsStayOpen-collapseThree">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  از طریق بخش "پشتیبانی" در پایین این سوالات می‌توانید با تیم پشتیبانی در واتساپ تماس بگیرید و مشکلات
+                  خود را گزارش دهید.
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseFour"
-                data-bs-toggle="collapse"
-                onclick="clickBtn4()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseFour"
+                data-bs-toggle="collapse" onclick="clickBtn4()">
                 <img src="img/big.svg" id="toggleImg4" />
-                <span>آیا میتوان اطلاعات دیگری را به فاکتور اضافه کرد؟</span>
+                <span>آیا اطلاعات ملکی من در املاک‌یار امن است؟</span>
               </button>
             </div>
             <div class="collapse" id="panelsStayOpen-collapseFour">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  بله، املاک‌یار از پروتکل‌های امنیتی پیشرفته برای حفاظت از اطلاعات شما استفاده می‌کند.
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseFive"
-                data-bs-toggle="collapse"
-                onclick="clickBtn5()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseFive"
+                data-bs-toggle="collapse" onclick="clickBtn4()">
                 <img src="img/big.svg" id="toggleImg5" />
-                <span>صورت حساب چگونه کار می کند؟</span>
+                <span>آیا می‌توانم فایل‌های خود را به صورت دسته‌بندی شده مدیریت کنم؟
+                </span>
               </button>
             </div>
             <div class="collapse" id="panelsStayOpen-collapseFive">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  بله، امکان دسته‌بندی و مدیریت فایل‌ها بر اساس نوع ملک و جزئیات دلخواه وجود دارد.
                 </p>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item border-bottom">
             <div class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                data-bs-target="#panelsStayOpen-collapseSix"
-                data-bs-toggle="collapse"
-                onclick="clickBtn6()"
-              >
+              <button class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseSix"
+                data-bs-toggle="collapse" onclick="clickBtn4()">
                 <img src="img/big.svg" id="toggleImg6" />
-                <span>چگونه شماره اکانت خود را تغییر دهم؟</span>
+                <span>آیا املاک‌یار برای استفاده در شهرهای مختلف مناسب است؟</span>
               </button>
             </div>
             <div class="collapse" id="panelsStayOpen-collapseSix">
               <div class="accordion-body">
                 <p>
-                  بله، شما می توانید ما را به مدت 30 روز به صورت رایگان امتحان
-                  کنید. اگر بخواهید ما یک تماس 30 دقیقه ای رایگان و شخصی سازی
-                  شده برای شما ارائه می کنیم تا شما را در اسرع وقت راه اندازی
-                  کنیم.
+                  بله، املاک‌یار برای تمامی شهرها قابل استفاده بوده و ابزارهای محلی‌سازی شده مانند محاسبه کمیسیون بر
+                  اساس شهر شما را دارد.
                 </p>
               </div>
             </div>
@@ -520,11 +386,9 @@
           نمی توانید پاسخ موردنظر خود را پیدا کنید؟ لطفا با تیم دوست داشتنی ما
           چت کنید.
         </p>
-        <a href="https://wa.me/989210834741"
-          ><button class="btn-question-user px-3 py-2 rounded">
+        <a href="https://wa.me/989210834741"><button class="btn-question-user px-3 py-2 rounded">
             <img src="img/whatsapp.svg" class="me-2" />پیام دهید
-          </button></a
-        >
+          </button></a>
       </div>
     </div>
     <!-- End Questions -->
@@ -533,35 +397,26 @@
     <div class="download-section container-fluid w-full py-3 py-md-5">
       <div class="download-register row w-full">
         <div
-          class="download-txt col-12 col-md-6 text-center d-flex justify-content-center align-items-start flex-column px-3 px-md-5"
-        >
-          <h2 class="title-row-section">در 1 دقیقه ثبت نام کنید</h2>
-          <ul
-            class="lists-option p-0 my-3 d-flex justify-content-center align-items-start flex-column"
-          >
+          class="download-txt col-12 col-md-6 text-start d-flex justify-content-center align-items-start flex-column px-3 px-md-5">
+          <h2 class="title-row-section">همین حالا املاک‌یار را دانلود کنید!</h2>
+          <ul class="lists-option p-0 my-3 d-flex justify-content-center align-items-start flex-column">
             <li class="d-flex justify-content-center align-items-center mb-2">
-              <div
-                class="rounded-circle d-flex justify-content-center align-items-center me-2"
-              >
+              <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                 <img src="img/check.svg" />
               </div>
-              سرچ حرفه ای و فیلترینگ پیشرفته
+              مدیریت آسان و حرفه‌ای فایل‌ها
             </li>
             <li class="d-flex justify-content-center align-items-center mb-2">
-              <div
-                class="rounded-circle d-flex justify-content-center align-items-center me-2"
-              >
+              <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                 <img src="img/check.svg" />
               </div>
-              اضافه کردن عکس به فایل ها
+              دسترسی سریع به ابزارهای حرفه‌ای
             </li>
             <li class="d-flex justify-content-center align-items-center">
-              <div
-                class="rounded-circle d-flex justify-content-center align-items-center me-2"
-              >
+              <div class="rounded-circle d-flex justify-content-center align-items-center me-2">
                 <img src="img/check.svg" />
               </div>
-              امکان انتشار عمومی
+              افزایش شانس موفقیت در معاملات
             </li>
           </ul>
 
@@ -570,18 +425,14 @@
               ><button class="download-qrcode px-2 py-2 rounded border">
                 <img src="img/qrcode.png" /></button
             ></a> -->
-            <a href="download/download.html"
-              ><button class="download-fast px-4 py-2 rounded">
+            <a href="download/download.html"><button class="download-fast px-4 py-2 rounded">
                 <img src="img/download.svg" class="me-2" />دانلود اپلیکیشن
-              </button></a
-            >
+              </button></a>
           </div>
         </div>
 
-        <div
-          class="download-img col-12 col-md-6 d-flex justify-content-center align-items-center"
-        >
-          <img src="img/phone4.png" class="phone-download" />
+        <div class="download-img col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <img src="img/footer-banner-picture.png" class="phone-download" />
         </div>
       </div>
 
@@ -613,35 +464,24 @@
     <footer class="footer-section container-fluid w-full pt-5">
       <div class="footer-row1 row w-full">
         <div
-          class="box-row1 col-12 col-sm-6 d-flex justify-content-center align-items-start flex-column px-3 px-md-4 pb-3 pb-sm-0"
-        >
+          class="box-row1 col-12 col-sm-6 d-flex justify-content-center align-items-start flex-column px-3 px-md-4 pb-3 pb-sm-0">
           <img src="img/logo.svg" class="logo-footer mb-2" />
-          <span class="team"
-            >توسط تیم روینو با کلی <img src="img/coffee.svg" class="coffee"
-          /></span>
+          <span class="team">توسط تیم روینو با کلی <img src="img/coffee.svg" class="coffee" /></span>
         </div>
-        <div
-          class="box-row1 img-namad col-12 col-sm-6 d-flex justify-content-sm-end align-items-center px-2 px-md-4"
-        >
-          <img src="img/zarrin.svg" />
+        <div class="box-row1 img-namad col-12 col-sm-6 d-flex justify-content-sm-end align-items-center px-2 px-md-4">
+          <img src="img/zarinpal.svg" />
           <img src="img/samandehi.svg" />
-          <img src="img/Enamad.svg" />
+          <img src="img/enamad.svg" />
         </div>
       </div>
       <div class="footer-row2 row w-full py-4 py-sm-5">
-        <div
-          class="box-row2 img-social col-12 col-sm-6 d-flex justify-content-start align-items-center px-3 px-md-4"
-        >
-            <a href="https://github.com/RoinoTeam/amlakyar/releases/download/1.3.0/app-release.apk"><img src="img/git.svg" /></a>
-            <a href="https://linkedin/in/behshadrhp"><img src="img/linkedin.svg" /></a>
-            <a href="https://t.me/behshadrhp"><img src="img/linkedin.svg" /></a>
+        <div class="box-row2 img-social col-12 col-sm-6 d-flex justify-content-start align-items-center px-3 px-md-4">
+          <a href="https://github.com/RoinoTeam/amlakyar/releases"><img src="img/git.svg" /></a>
+          <a href="https://t.me/AmlakyarApp"><img src="img/telegram.svg" /></a>
         </div>
         <div
-          class="box-row2 col-12 col-sm-6 d-flex justify-content-sm-end align-items-center px-3 px-md-4 pt-4 py-sm-0"
-        >
-          <span class="txt-foot"
-            >1403 تمامی حقوق برای املاک یار محفوظ است.</span
-          >
+          class="box-row2 col-12 col-sm-6 d-flex justify-content-sm-end align-items-center px-3 px-md-4 pt-4 py-sm-0">
+          <span class="txt-foot">تمامی حقوق محفوظ است © املاک‌یار 1404 | طراحی شده برای مشاوران حرفه‌ای املاک</span>
         </div>
       </div>
     </footer>
@@ -651,5 +491,6 @@
     <script src="scripts/Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="scripts/accordion.js"></script>
     <script src="scripts/menu-scroll.js"></script>
-  </body>
+</body>
+
 </html>
